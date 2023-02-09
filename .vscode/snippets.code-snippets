@@ -1,0 +1,127 @@
+{
+  "boilerplate C": {
+    "scope": "c",
+    "prefix": "boilerplate C",
+    "body": [
+      "#include<stdio.h>",
+      "#include<stdlib.h>",
+      "#include<math.h>",
+      "#include<string.h>",
+      "",
+      "int main(int args, char* argc[]){",
+      "\t//CODE HERE",
+      "\t$1",
+      "\treturn 0;",
+      "};"
+    ]
+  },
+  "boilerplate CPP": {
+    "scope": "cpp",
+    "prefix": "boilerplate",
+    "body": [
+      "#include<iostream>",
+      "#include <cstdlib>",
+      "#include<vector>",
+      "#include<cmath>",
+      "#include<string>",
+      "",
+      "int main(int args, char* argc[]){",
+      "\t//CODE HERE",
+      "\t$1",
+      "\treturn 0;",
+      "};"
+    ]
+  },
+  "printArr": {
+    "scope": "cpp",
+    "prefix": "printArr",
+    "body": [
+      "void printArr(int *arr, int n)",
+      "{",
+      "\tcout << \"[\";",
+      "\tfor (int i = 0; i < n; i++)",
+      "\t{",
+      "\t\tcout << arr[i] << \", \";",
+      "\t}",
+      "\tcout << \"\\b\\b]\" << endl;",
+      "}"
+    ]
+  },
+  "swapTwoIntegers": {
+    "scope": "cpp, c",
+    "prefix": "swap",
+    "description": "Swaps two passed integer pointers",
+    "body": [
+      "void swap(int *a, int *b)",
+      "{",
+      "\tint temp = *a;",
+      "\t*a = *b;",
+      "\t*b = temp;",
+      "}"
+    ]
+  },
+  "selectionSort O(n^2)": {
+    "scope": "cpp, c",
+    "prefix": "selectionSort",
+    "description": "Sorts an integer array using selection sort , Time Complexity - O(n^2), Space Complexity - O(1) ",
+    "body": [
+      "int findMin(int *arr, int s, int e)",
+      "{",
+      "    int min = arr[s];",
+      "    int minInd = s;",
+      "    for (int i = s; i < e; i++)",
+      "    {",
+      "        if (arr[i] < min)",
+      "        {",
+      "            minInd = i;",
+      "            min = arr[i];",
+      "        }",
+      "    }",
+      "    return minInd;",
+      "}",
+      "",
+      "void swap(int *a, int *b)",
+      "{",
+      "    int temp = *a;",
+      "    *a = *b;",
+      "    *b = temp;",
+      "}",
+      "",
+      "void selectionSort(int *arr, int n)",
+      "{",
+      "    for (int i = 0; i < n; i++)",
+      "    {",
+      "        int min = findMin(arr, i, n);",
+      "        swap(arr[i], arr[min]);",
+      "    }",
+      "}"
+    ]
+  },
+  "BubbleSort O(n^2)": {
+    "scope": "cpp, c",
+    "prefix": "bubbleSort",
+    "description": "Sorts an integer array using bubble sort , Time Complexity - O(n^2), Space Complexity - O(1)",
+    "body": [
+      "void swap(int *a, int *b)",
+      "{",
+      "    int temp = *a;",
+      "    *a = *b;",
+      "    *b = temp;",
+      "}",
+      "",
+      "void bubbleSort(int *arr, int n)",
+      "{",
+      "    for (int i = 0; i < n; i++)",
+      "    {",
+      "        for (int j = i + 1; j < n; j++)",
+      "        {",
+      "            if (arr[j] < arr[i])",
+      "            {",
+      "                swap(arr[j], arr[i]);",
+      "            }",
+      "        }",
+      "    }",
+      "}"
+    ]
+  }
+}

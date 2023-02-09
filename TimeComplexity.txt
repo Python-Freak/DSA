@@ -1,0 +1,27 @@
+O() -> worst case
+θ() -> avergae case
+Ω() -> best case
+
+DECREASING ORDER OF COMPLEXITY:
+O(n!)               ----> MOST COMPLEX
+O(2^n)
+O(n^3)
+O(n^2)
+O(n*ln(n))
+O(n)
+O(ln(n))
+O(1)                ----> LEAST COMPLEX
+
+For competitive programming
+Values of n .          Feisable time complexity
+<= [10...11]            O(n!) or O(n^6)
+<= [15, 18]             O(2^n * n^2)
+<= 100                  O(n^4)
+<= 400                  O(n^3)
+<= 2000                 O(n^2 * ln(n))
+<= 10^4                 O(n^2)
+<= 10^6                 O(n*ln(n))
+<= 10^8                 O(n) or O(ln(n))
+(To run under 1 second)
+
+for finding O(n) -> consider the highest complexity; (ignaore all small powers and less complexity)

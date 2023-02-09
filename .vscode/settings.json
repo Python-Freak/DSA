@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "string": "cpp",
+        "__string": "cpp",
+        "algorithm": "cpp",
+        "string_view": "cpp",
+        "iostream": "cpp",
+        "iosfwd": "cpp",
+        "__config": "cpp",
+        "fstream": "cpp",
+        "ostream": "cpp",
+        "istream": "cpp",
+        "*.css": "css",
+        "romans.C": "cpp"
+    }
+}
